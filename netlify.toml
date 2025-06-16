@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm install && pnpm --filter web build"
+  publish = "apps/web/.next"
+
+[build.environment]
+  NODE_VERSION = "18"
+  PNPM_VERSION = "8"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  directory = "apps/web/.netlify/functions" 

@@ -73,4 +73,19 @@ To add a new package to the workspace:
 - **TypeScript** - Type safety
 - **Tailwind CSS** - Utility-first CSS framework
 - **ESLint** - Code linting
-- **pnpm** - Package manager and workspace tool 
+- **pnpm** - Package manager and workspace tool
+
+## Deployment
+
+This project is configured for easy deployment to Netlify. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
+
+### Quick Deploy to Netlify
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Connect your repository to Netlify
+3. Use these build settings:
+   - **Build command:** `pnpm install && pnpm --filter web build`
+   - **Publish directory:** `apps/web/.next`
+   - **Node version:** `18`
+
+The `netlify.toml` file is already configured with the optimal settings. 
