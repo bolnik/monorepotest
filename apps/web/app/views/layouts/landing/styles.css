@@ -1,0 +1,52 @@
+
+.hero-title {
+  color: var(--primary);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, 
+    #fafbfb 0%, 
+    #f6f6f7 50%, 
+    #f1f2f3 100%);
+  border: 1px solid #e1e3e5;
+}
+
+.hero-cta-primary button,
+button[data-variant="primary"],
+.Polaris-Button--variantPrimary,
+.Polaris-Button[data-variant="primary"],
+button.Polaris-Button--variantPrimary,
+[class*="Polaris-Button"][class*="Primary"] {
+  background-color: var(--primary) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.3) !important;
+}
+
+button[class*="Polaris-Button"]:not([class*="secondary"]):not([class*="Secondary"]) {
+  background-color: var(--primary) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 128, 96, 0.3) !important;
+}
+
+
+.custom-primary-text {
+  color: var(--primary) !important;
+}
+
+.custom-primary-bg {
+  background-color: oklch(0.95 0.05 250);
+  border-left: 4px solid var(--primary);
+}
+
+
+.Polaris-Modal-Dialog__Container .Polaris-Icon svg{
+  fill: #fff;
+}
+
+.Polaris-Box{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
