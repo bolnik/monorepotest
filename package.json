@@ -1,0 +1,17 @@
+{
+  "name": "mymono",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A pnpm workspace with Next.js project",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+} 
